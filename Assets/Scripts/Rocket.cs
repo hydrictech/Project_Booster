@@ -25,6 +25,25 @@ public class Rocket : MonoBehaviour
         Rotate();
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Friendly":
+                //do nothing
+                print("ok");
+                break;
+            case "Fuel":
+                print("Fuel");
+                break;
+            default:
+                print("Dead");
+                //To Kill Player
+                break;
+        }
+        
+    }
+
     private void Thrust()
     {
         if (Input.GetKey(KeyCode.Space)) // can thrust while rotating

@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rcsThrust: 250
-  mainThrust: 50
+  mainThrust: 35
 --- !u!1 &625943752941055352
 GameObject:
   m_ObjectHideFlags: 0
